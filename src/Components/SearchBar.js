@@ -5,12 +5,15 @@ import  CloseButton  from "react-bootstrap/CloseButton";
 
 function SearchBar (props) {
     const [searchTerm, setSearchTerm] = useState('');
-
+    const handleClick = (searchTerm) => {
+        props.searchByTerm(searchTerm);
+        props.toggleSearch();
+    }
 
     return (
         <>
         <div className="sb-container">
-            <div className="sb-search-icon" onClick={()=>props.searchByTerm(searchTerm)}>
+            <div className="sb-search-icon" onClick={()=>handleClick(searchTerm)}>
                 <FaSearch />
             </div>
             <div className="sb-search-input">
