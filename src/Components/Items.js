@@ -1,13 +1,14 @@
 import React from "react";
 import Spinner from "react-bootstrap/Spinner";
 import { useSelector } from "react-redux";
-import { selectIsLoading, selectItems } from "../app/itemsSlice";
+import { selectIsLoading, selectItems, selectHasError } from "../app/itemsSlice";
 import ItemCard from "./ItemCard";
 import { useState, useEffect } from "react";
 
 function Items (props) {
     const isLoading = useSelector(selectIsLoading);
     const items = useSelector(selectItems);
+    const hasError = useSelector(selectHasError);
     const [show, setShow] = useState(false);
 
     useEffect(()=> {
@@ -16,6 +17,7 @@ function Items (props) {
 
     return (
         <>
+        {hasError && <p>Error al obtener los datos. Error: {hasError}</p>}
         {items?
          <div className="items-container">
             {items.map((item, index)=> {

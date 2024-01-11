@@ -2,10 +2,17 @@ import React from "react";
 import { CSSTransition } from "react-transition-group";
 import { useRef } from "react";
 import ReactPlayer from "react-player";
+import { useNavigate } from "react-router-dom";
 
 export default function ItemCard (props) {
-    const {title, subreddit, author, permalink,text, text_html, is_video, video, image, image_url} = props.item;
+    const {title, id, subreddit, author, permalink,text, text_html, is_video, video, image, image_url} = props.item;
     const nodeRef = useRef(null);
+    const navigate = useNavigate();
+
+    const showItem = (id) => {
+        navigate(`/item/${id}`);
+    }
+
 
     return (
         <CSSTransition
@@ -15,7 +22,7 @@ export default function ItemCard (props) {
             classNames='cards'
             mountOnEnter={true}
         >
-            <div className="item-card" ref={nodeRef}>
+            <div className="item-card" ref={nodeRef} onClick={()=>showItem(id)}>
                 <h3 className="subreddit">{subreddit}</h3>
                 <h3 className="author">{author}</h3>
                 <h2 className="item-title">{title}</h2>
@@ -28,7 +35,6 @@ export default function ItemCard (props) {
                 <div className="card-video-container">
                     <ReactPlayer url={`${video.reddit_video.dash_url}`} controls className='video-player' width='100%' height='100%'/>
                 </div>}
-                  <p className="enlace-reddit"><a href={'https://www.reddit.com'+permalink} target="_blank" >Ver en Reddit.com</a></p>
             </div>
         </CSSTransition>
     )

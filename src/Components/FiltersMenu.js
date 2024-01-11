@@ -1,38 +1,29 @@
 import React from "react";
-import { filters } from "../mocks/filters";
-import { useState, useEffect } from "react";
+import CloseButton from 'react-bootstrap/CloseButton';
+import { useSelector, useDispatch } from "react-redux";
+import { selectCategories } from "../app/itemsSlice";
+import { fetchData } from "../app/itemsSlice";
 
-const filtersArray = [];
-filters.forEach((filter, i) => {
-    filtersArray.push({filterName: filter, position: i, isChecked: false});
-});
 
 
 function FiltersMenu (props) {
-    const {filters} = props;
-   /* const [selectedFilters, setSelectedFilters] = useState(filtersArray);
+    const categories = useSelector(selectCategories);
+    const dispatch = useDispatch();
 
-   const handleChange = position => {
-    setSelectedFilters(prev => {
-        return prev.map((filter, index)=> index===position? {...filter, isChecked: !filter.isChecked} : filter)
-   })
-   }*/
+    const getItemsByCategory = (cat_link) => {
+
+        props.changeCategory(cat_link)
+        props.toggleFilters();
+    }
 
     return (
         <div className="filters-container">
+            <CloseButton id="close_button" variant="white" onClick={()=>props.toggleFilters()}/>
             <ul className="filters-list">
-                    {filters.map(({filterName, position, isChecked}) => {
+                    {categories.map((category, index)=>{
                         return (
-                            <li key={position} className="filter-item">
-                                <label htmlFor={`${filterName}-checkbox`}>{filterName}</label>
-                                <input 
-                                type="checkbox"
-                                name={filterName}
-                                value={filterName}
-                                id={`${filterName}-checkbox`}
-                                checked={isChecked}
-                                onChange={()=>props.changeFilters(position)}
-                                />
+                            <li key={`cat-${index}`} className="filter-item" onClick={()=>getItemsByCategory(category.cat_link)}>
+                                {category.cat_name}
                             </li>
                         )
                     })}
