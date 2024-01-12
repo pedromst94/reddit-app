@@ -23,8 +23,15 @@ const itemsSlice = createSlice({
     initialState: {
         items: [],
         categories: categories,
+        selectedCategory: undefined,
         isLoading: false,
         hasError: false
+    },
+    reducers: {
+        setSelectedCategory: (state, action) => {
+            action.payload.index === 34 ? state.selectedCategory = undefined :
+            state.selectedCategory = categories[action.payload.index];
+        }
     },
     extraReducers: (builder) => {
         builder
@@ -64,4 +71,6 @@ export const selectHasError = state => state.items.hasError;
 export const selecItem = (item_id) => (state) => {
     return state.items.items.filter(item => item.id == item_id)
 };
+export const selectSelectedCategory = state => state.items.selectedCategory;
+export const {setSelectedCategory} = itemsSlice.actions;
 export default itemsSlice.reducer;

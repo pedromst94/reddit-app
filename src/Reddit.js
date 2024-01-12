@@ -10,7 +10,7 @@ export const categories = [
     cat_link: '/r/BaldursGate3'},
     {cat_name: 'Damn, that`s interesting',
     cat_link: '/r/Damnthatsinteresting'},
-    {cat_name: 'Reddir pics',
+    {cat_name: 'Reddit pics',
     cat_link: '/r/pics'},
     {cat_name: 'Facepalm',
     cat_link: '/r/facepalm'},
@@ -66,7 +66,7 @@ const redditAPI = {
             const response = await fetch(URL);
             if(response.ok) {
                 const jsonResponse = await response.json();
-                console.log(jsonResponse);
+                //console.log(jsonResponse);
                 let formatedData = []
                 jsonResponse.data.children.forEach((element) => {
                     formatedData.push({
@@ -83,7 +83,7 @@ const redditAPI = {
                         video: element.data.media
                     })
                 });
-                console.log(formatedData);
+                //console.log(formatedData);
                 return formatedData;
             }
             throw new Error('Solicitud fallida');
@@ -118,7 +118,7 @@ const redditAPI = {
                         video: element.data.media
                     })
                 });
-                console.log(formatedData);
+                //console.log(formatedData);
                 return formatedData;
             }
             throw new Error('Solicitud fallida');
