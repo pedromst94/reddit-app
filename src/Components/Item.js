@@ -31,7 +31,7 @@ function Item () {
     return (
         <>
         <div className="item-page">
-        <button className="back-button" onClick={()=>goHome()}> <IoMdArrowRoundBack /></button>
+        <button className="m-back-button back-button" onClick={()=>goHome()}> <IoMdArrowRoundBack /></button>
             <div className="item-page-card">
                 <h3 className="subreddit" onClick={()=>searchSubreddit(subreddit)}>{subreddit}</h3>
                     <h3 className="author">{author}</h3>

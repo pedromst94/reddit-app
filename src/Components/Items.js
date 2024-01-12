@@ -19,7 +19,7 @@ function Items (props) {
         <>
         {hasError && <p>Error al obtener los datos. Error: {hasError}</p>}
         {items?
-         <div className="items-container">
+         <div className="m-items-container items-container">
             {items.map((item, index)=> {
                 return (
                     <ItemCard item={item} show={show} key={`item-${index}`} />

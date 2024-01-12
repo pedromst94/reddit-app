@@ -12,11 +12,11 @@ function SearchBar (props) {
 
     return (
         <>
-        <div className="sb-container">
+        <div className="m-sb-container sb-container">
             <div className="sb-search-icon" onClick={()=>handleClick(searchTerm)}>
                 <FaSearch />
             </div>
-            <div className="sb-search-input">
+            <div className="m-sb-search-input sb-search-input">
             <input type="text"
                 value={searchTerm}
                 onChange={(e)=>setSearchTerm(e.target.value)}

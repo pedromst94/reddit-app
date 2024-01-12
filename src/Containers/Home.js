@@ -53,10 +53,12 @@ export default function Home () {
     const changeCategory = (cat) => {
         setCat_url(cat);
         navigate('/');
+        scrollToTop();
     }
 
     const searchByTerm = (term) => {
         dispatch(searchDataByTerm(term));
+        scrollToTop();
     }
 
     return (
@@ -78,7 +80,10 @@ export default function Home () {
                 <div className='filter-button' onClick={() => toggleFilters()}>
                     <BiCategory />
                 </div>
-                <h1 className='titulo-pagina' onClick={()=>scrollToTop()}><FaRedditSquare />  Reddit App</h1>
+                <h1 className={`titulo-pagina ${isSearching && 'm-title-disappear'}`} onClick={()=>scrollToTop()} >
+                    <FaRedditSquare /> {' '}
+                    Reddit App
+                </h1>
                 {!isSearching?
                 <div className='search-button' onClick={()=> setIsSearching(true)} >
                     <FaSearch/>

@@ -22,7 +22,7 @@ export default function ItemCard (props) {
             classNames='cards'
             mountOnEnter={true}
         >
-            <div className="item-card" ref={nodeRef} onClick={()=>showItem(id)}>
+            <div className="m-item-card item-card" ref={nodeRef} onClick={()=>showItem(id)}>
                 <h3 className="subreddit">{subreddit}</h3>
                 <h3 className="author">{author}</h3>
                 <h2 className="item-title">{title}</h2>

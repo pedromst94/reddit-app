@@ -411,3 +411,61 @@ html, body {
 .sb-search-close:hover {
   scale: 1.1;
 }
+
+@media only screen and (max-width: 480px) {
+  .m-items-container {
+    grid-template-columns: 80vw;
+    margin-top: 50px;
+  }
+
+  .m-item-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  .m-back-button {
+    top: 5px;
+    left: 5px;
+  }
+
+  .m-filters-container {
+    width: 70vw;
+  }
+
+  .m-filter-item{
+    width: 50vw;
+  }
+
+  #progress-bar {
+    height: 10vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .m-title-disappear {
+    display: none;
+  }
+
+  .m-sb-container {
+    width: 50vw;
+    animation: sb-enter 300ms ease-in-out;
+  }
+
+  @keyframes sb-enter {
+    from {
+      width: 40px;
+      opacity: 0.1;
+      overflow: hidden;
+    }
+    to {
+      width: 50vw;
+      opacity: 1;
+    }
+  }
+
+  .m-sb-search-input input {
+    width: 33vw;
+  }
+}
