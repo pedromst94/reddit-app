@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/reddit-app/static/css/main.22c982c0.css",
+    "main.js": "/reddit-app/static/js/main.7168c9c9.js",
+    "reactPlayerYouTube.js": "/reddit-app/static/js/reactPlayerYouTube.e19553a0.chunk.js",
+    "reactPlayerSoundCloud.js": "/reddit-app/static/js/reactPlayerSoundCloud.de503a4a.chunk.js",
+    "reactPlayerVimeo.js": "/reddit-app/static/js/reactPlayerVimeo.e75de620.chunk.js",
+    "reactPlayerFacebook.js": "/reddit-app/static/js/reactPlayerFacebook.a8a45b13.chunk.js",
+    "reactPlayerStreamable.js": "/reddit-app/static/js/reactPlayerStreamable.de201da5.chunk.js",
+    "reactPlayerWistia.js": "/reddit-app/static/js/reactPlayerWistia.fa794f55.chunk.js",
+    "reactPlayerTwitch.js": "/reddit-app/static/js/reactPlayerTwitch.ddf46534.chunk.js",
+    "reactPlayerDailyMotion.js": "/reddit-app/static/js/reactPlayerDailyMotion.09a6219c.chunk.js",
+    "reactPlayerMixcloud.js": "/reddit-app/static/js/reactPlayerMixcloud.dcf4fd66.chunk.js",
+    "reactPlayerVidyard.js": "/reddit-app/static/js/reactPlayerVidyard.67270968.chunk.js",
+    "reactPlayerKaltura.js": "/reddit-app/static/js/reactPlayerKaltura.5891068e.chunk.js",
+    "reactPlayerFilePlayer.js": "/reddit-app/static/js/reactPlayerFilePlayer.8aadfcdb.chunk.js",
+    "reactPlayerPreview.js": "/reddit-app/static/js/reactPlayerPreview.91363687.chunk.js",
+    "static/js/787.10cf512c.chunk.js": "/reddit-app/static/js/787.10cf512c.chunk.js",
+    "index.html": "/reddit-app/index.html",
+    "main.22c982c0.css.map": "/reddit-app/static/css/main.22c982c0.css.map",
+    "main.7168c9c9.js.map": "/reddit-app/static/js/main.7168c9c9.js.map",
+    "reactPlayerYouTube.e19553a0.chunk.js.map": "/reddit-app/static/js/reactPlayerYouTube.e19553a0.chunk.js.map",
+    "reactPlayerSoundCloud.de503a4a.chunk.js.map": "/reddit-app/static/js/reactPlayerSoundCloud.de503a4a.chunk.js.map",
+    "reactPlayerVimeo.e75de620.chunk.js.map": "/reddit-app/static/js/reactPlayerVimeo.e75de620.chunk.js.map",
+    "reactPlayerFacebook.a8a45b13.chunk.js.map": "/reddit-app/static/js/reactPlayerFacebook.a8a45b13.chunk.js.map",
+    "reactPlayerStreamable.de201da5.chunk.js.map": "/reddit-app/static/js/reactPlayerStreamable.de201da5.chunk.js.map",
+    "reactPlayerWistia.fa794f55.chunk.js.map": "/reddit-app/static/js/reactPlayerWistia.fa794f55.chunk.js.map",
+    "reactPlayerTwitch.ddf46534.chunk.js.map": "/reddit-app/static/js/reactPlayerTwitch.ddf46534.chunk.js.map",
+    "reactPlayerDailyMotion.09a6219c.chunk.js.map": "/reddit-app/static/js/reactPlayerDailyMotion.09a6219c.chunk.js.map",
+    "reactPlayerMixcloud.dcf4fd66.chunk.js.map": "/reddit-app/static/js/reactPlayerMixcloud.dcf4fd66.chunk.js.map",
+    "reactPlayerVidyard.67270968.chunk.js.map": "/reddit-app/static/js/reactPlayerVidyard.67270968.chunk.js.map",
+    "reactPlayerKaltura.5891068e.chunk.js.map": "/reddit-app/static/js/reactPlayerKaltura.5891068e.chunk.js.map",
+    "reactPlayerFilePlayer.8aadfcdb.chunk.js.map": "/reddit-app/static/js/reactPlayerFilePlayer.8aadfcdb.chunk.js.map",
+    "reactPlayerPreview.91363687.chunk.js.map": "/reddit-app/static/js/reactPlayerPreview.91363687.chunk.js.map",
+    "787.10cf512c.chunk.js.map": "/reddit-app/static/js/787.10cf512c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22c982c0.css",
+    "static/js/main.7168c9c9.js"
+  ]
+}
