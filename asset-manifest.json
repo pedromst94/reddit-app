@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reddit-app/static/css/main.22c982c0.css",
-    "main.js": "/reddit-app/static/js/main.7168c9c9.js",
+    "main.js": "/reddit-app/static/js/main.e4a5aa76.js",
     "reactPlayerYouTube.js": "/reddit-app/static/js/reactPlayerYouTube.e19553a0.chunk.js",
     "reactPlayerSoundCloud.js": "/reddit-app/static/js/reactPlayerSoundCloud.de503a4a.chunk.js",
     "reactPlayerVimeo.js": "/reddit-app/static/js/reactPlayerVimeo.e75de620.chunk.js",
@@ -18,7 +18,7 @@
     "static/js/787.10cf512c.chunk.js": "/reddit-app/static/js/787.10cf512c.chunk.js",
     "index.html": "/reddit-app/index.html",
     "main.22c982c0.css.map": "/reddit-app/static/css/main.22c982c0.css.map",
-    "main.7168c9c9.js.map": "/reddit-app/static/js/main.7168c9c9.js.map",
+    "main.e4a5aa76.js.map": "/reddit-app/static/js/main.e4a5aa76.js.map",
     "reactPlayerYouTube.e19553a0.chunk.js.map": "/reddit-app/static/js/reactPlayerYouTube.e19553a0.chunk.js.map",
     "reactPlayerSoundCloud.de503a4a.chunk.js.map": "/reddit-app/static/js/reactPlayerSoundCloud.de503a4a.chunk.js.map",
     "reactPlayerVimeo.e75de620.chunk.js.map": "/reddit-app/static/js/reactPlayerVimeo.e75de620.chunk.js.map",
@@ -36,6 +36,6 @@
   },
   "entrypoints": [
     "static/css/main.22c982c0.css",
-    "static/js/main.7168c9c9.js"
+    "static/js/main.e4a5aa76.js"
   ]
 }
